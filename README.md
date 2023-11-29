@@ -1,2 +1,3 @@
-##Learning javascript
-basic toDo app created with javascript.
+# Learning javascript
+
+Basic toDo app created with javascript.
