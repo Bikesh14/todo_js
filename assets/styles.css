@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+}
+nav {
+  background-color: #ffffff;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+
+  
+}
+
+nav a {
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  position: relative;
+}
+
+nav a:hover {
+  background-color: #ddd;
+  color: #000000;
+}
+
+nav a.active {
+  color: #2e7eb8;
+}
+
+nav a.active::after {
+  content: '';
+  display: block;
+  height: 4px;
+  width: 100%;
+  background-color: #2e7eb8;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.container {
+  padding: 20px;
+  text-align: center;
+  margin: 20px auto;
+  width: 80%;
+}
+
+.container #logo {
+  margin-right: auto;
+}
+
+.todo-container {
+  max-width: 80%;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.search-wrapper form{
+  margin-bottom: 2rem;
+  display: flex; 
+  gap: 10px; 
+  flex-direction: row;
+}
+
+.search-wrapper form .search-todos{
+  width: 50%;}
+
+  .search-wrapper form button{
+    width: 20%;}
+h3 {
+  font-size: 1.125rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+textarea {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  outline: none;
+}
+
+button[type="submit"],
+button {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 4px;
+  background: #f94144;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s ease-out;
+}
+
+button[type="submit"]:hover,
+button:hover {
+  background: #f53b2a;
+}
+
+.search-wrapper button{
+  background-color:rgb(90, 129, 151)
+  
+}
+
+.add-todo-wrapper .add-todo-title{
+  width: 50%;
+  margin-bottom: 2%;
+}
+
+.add-todo-wrapper button {
+  background-color: rgb(0, 59, 81);
+  margin-top: 1rem;
+  width: 40%;
+
+}
+.search-wrapper button:hover,
+.add-todo-wrapper button:hover {
+  background-color: rgb(54, 128, 155);
+}
+
+.todo-item{
+  margin-bottom: 1rem;
+}
+.todo-title-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2rem;
+  align-items: center;
+}
+
+
+.todo-title-wrapper .title-checkbox .checkbox {
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.todo-title-wrapper .title-checkbox h4 {
+  font-size: 1.1rem;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.todo-title-wrapper .title-checkbox h4.finished {
+  text-decoration: line-through;
+  color: #777;
+}
+
+.todo-title-wrapper p {
+  margin-left: 8px;
+  font-size: 1.1rem;
+  color: rgba(128, 128, 128, 0.5)
+}
+
+
+.no-tasks-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.no-tasks-container img {
+  max-width: 5rem;
+  margin: 0 auto 1rem auto;
+}
+
+.no-tasks {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 10px; 
+}
+
+
+
+/* responsive part */
+
+@media screen and (max-width: 569px) {
+
+  nav {
+    flex-direction: column;
+  }
+
+  .container #logo {
+    margin: 0 auto;
+  }
+  
+  .search-wrapper form{
+    flex-direction: column;
+  }
+  
+.add-todo-wrapper .add-todo-title{
+  width: 100%;
+}
+
+.add-todo-wrapper button {
+  width: 100%;
+
+}
+
+  
+.search-wrapper form .search-todos{
+  width: 100%;}
+
+  .search-wrapper form button{
+    width: 100%;}
+  
+}

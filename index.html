@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo App</title>
+    <link rel="stylesheet" href="./assets/styles.css" />
+  </head>
+  <body>
+    
+<nav class="container">
+  <div id="logo">
+    <img src="./assets/img/todo.png" alt="Logo" style="max-width: 60px;"> 
+  </div>
+  <a href="#" class="filter selected active" data-filter="all">All Tasks</a>
+  <a href="#" class="filter" data-filter="finished">Completed</a>
+  <a href="#" class="filter" data-filter="unfinished">Remaining</a>
+  
+</nav>
+
+
+<div class="todo-container">
+<div class="content">
+  <div class="form-wrapper">
+          <div class="search-wrapper" >
+            <form>
+              <input
+                type="text"
+                placeholder="Search tasks"
+                class="search-todos"/>
+              <button type="submit">Search</button>
+            </form>
+          </div>
+          
+          
+
+          <div class="add-todo-wrapper">
+            <h3><strong>Add a new To-DO</strong></h3>
+            <form>
+              <input
+                type="text"
+                placeholder="Add task title"
+                class="add-todo-title"
+              />
+              <textarea
+                rows="2"
+                placeholder="Add description"
+                class="add-todo-desc"
+              ></textarea>
+              <button type="submit">Add Task</button>
+            </form>
+          </div>
+        </div>
+        <div class="todos-wrapper">
+          <!-- Todo items will added dynamically here -->
+        </div>
+      </div>
+    </div>
+
+    <script src="./assets/script.js"></script>
+  </body>
+</html>
